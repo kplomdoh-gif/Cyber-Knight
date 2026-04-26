@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard</title>
+  <link rel="stylesheet" href="Homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+</head>
+<body>
+
+
+  <div class="dashboard">
+    <div id="mySidenav" class="sidenav">
+      <button id="toggleSidebar" class="toggle-btn" title="Toggle Sidebar">☰</button>
+      <a href="DGN C.html" data-section="home" class="nav-link"><span class="label">Home</span><i class="fa-solid fa-house"></i></a>
+      <a href="help.html" data-section="help" class="nav-link"><span class="label">Help</span><i class="fa-solid fa-phone"></i></a>
+      <a href="videos.html" data-section="videos" class="nav-link"><span class="label">Videos</span><i class="fa-solid fa-video"></i></a>
+      <a href="blogs.html" data-section="blogs" class="nav-link"><span class="label">Blogs</span><i class="fa-regular fa-file-lines"></i></a>
+      <a href="games.html" data-section="games" class="nav-link"><span class="label">Games</span><i class="fa-solid fa-gamepad"></i></a>
+      <a href="resources.html" data-section="resources" class="nav-link"><span class="label">Resources</span><i class="fa-solid fa-folder-open"></i></a>
+      <a href="settings.html" data-section="settings" class="nav-link"><span class="label">Settings</span><i class="fa-solid fa-gear"></i></a>
+    </div>
+    <div id="main" class="main">
+        <div class="topbar">
+            <div class="topbar-content">
+                <input type="text" class="search" placeholder="Search..." id="searchInput">
+            </div>
+        </div>
+        
+        <div class="welcome-card card">
+            <div class="welcome-header">
+                <h1>Welcome!</h1>
+                <div class="user-profile">
+                    <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+                    <span class="user-name" id="userName">User</span>
+                </div>
+            </div>
+            <p>Select a video, document, game, or helpline below to get started.</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="video-card card">
+                <div class="card-thumbnail video-thumb">
+                    <iframe src="https://www.youtube.com/embed/88-FENio9Yw?si=hyarHoquwA7sNolQ" title="Cybersecurity overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h3>Featured Video</h3>
+                <p>Watch a quick introduction to staying safe online.</p>
+                <a href="videos.html" class="card-link">Watch More →</a>
+            </div>
+           <div class="cards-container">
+            <div class="blog-card card">
+                <div class="card-thumbnail pdf-thumb">
+                    <img src="Screenshot 2026-04-13 194300.png" alt="Protect yourself online thumbnail">
+                </div>
+            <h3>Cyber Security Tips for Kids</h3>
+                    <li>Kid-friendly cyber safety advice</li>
+                    <li>Safe browsing and password tips</li>
+                    <li>Easy rules to remember</li>
+                </ul>
+</div>
+             <div class="helpline-card card">
+                <h3>Need Help?</h3>
+                <p>If you need support right now, tap the helpline button below.</p>
+                <a href="help.html" class="helpline-button">Open Helpline</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
