@@ -373,6 +373,39 @@ body {
   }
 }
 
+/* Blogs and Videos Grid */
+.blogs-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.blogs-grid .card {
+  padding: 15px;
+}
+
+.blogs-grid .card-thumbnail {
+  height: 150px;
+}
+
+.videos-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.videos-grid .card {
+  padding: 15px;
+}
+
+.videos-grid .card-thumbnail {
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .blogs-grid, .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .pdf-thumb {
   background: transparent;
   color: #c33;
